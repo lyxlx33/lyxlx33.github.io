@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人网页</title>
+  <title>LIAO Yinxiang 3221198</title>
   <style>
-    body {
+   body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -31,7 +31,7 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-    }
+      }
 
     nav ul li {
       display: inline;
@@ -68,41 +68,47 @@
       text-align: center;
       padding: 20px;
     }
+
+    section img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>我的个人网页</h1>
-  </header>
+    <h1>My Personal Webpage</h1>
+  }
   <nav>
     <ul>
-      <li><a href="#home">首页</a></li>
-      <li><a href="#interests">兴趣爱好</a></li>
-      <li><a href="#travel">旅行经历</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="Idor">Idor</a></li>
+      <li><a href="My former university">My former university</a></li>
     </ul>
-  </nav>
+  }
   <main>
     <section id="home">
-  <h2>首页内容</h2>
-  <img src="images/home.jpg" alt="首页图片">
-  <p>这里是首页的一些介绍文字。</p>
-</section>
-<section id="interests">
-  <h2>兴趣爱好</h2>
-  <img src="images/interests.jpg" alt="兴趣爱好图片">
-  <p>描述你的兴趣爱好相关内容。</p>
-</section>
-<section id="travel">
-      <h2>旅行经历</h>
-      <img src="images/travel1.jpg" alt="旅行经历图片1">
-      <img src="images/travel2.jpg" alt="旅行经历图片2">
-      <p>分享你的旅行故事和经历。</p>
-</section>
-  </main>
+      <h2>Home Content</h2>
+      <img src="images/home.jpg" alt="Home Picture">
+      <p>Here is some introduction text for the home page.</p>
+    }
+    <section id="Idor">
+      <h2>Interests</h2>
+      <img src="images/interests.jpg" alt="Interests Picture">
+      <p>Describe the content related to your interests.</p>
+    }
+    <section id="My former university">
+      <h2>My former university</h>
+      <img src="images/travel1.jpg" alt="Travel Picture 1">
+      <img src="images/travel2.jpg" alt="Travel Picture 2">
+      <p>Shenzhen Technology University</p>
+    }
+  }
   <footer>
-    &copy; 2023 - 你的名字. 版权所有
-  </footer>
+    &copy; 2023 - Your Name. All Rights Reserved
+  }
   <script>
     // 获取所有导航链接
     const navLinks = document.querySelectorAll('nav ul li a');
@@ -119,8 +125,8 @@
           // 使用平滑滚动到目标部分
           targetSection.scrollIntoView({ behavior: 'smooth' });
         }
-      });
     });
+  });
   </script>
 </body>
 
