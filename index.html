@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,22 +6,29 @@
     <title>个人主页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+        }
+        .header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            max-width: 900px;
+            margin: 20px auto;
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0073e6;
         }
         .section {
             margin-bottom: 20px;
@@ -30,9 +36,27 @@
         .section-title {
             font-size: 1.5em;
             margin-bottom: 10px;
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         .section-content {
             font-size: 1em;
+            line-height: 1.6;
+        }
+        .profile-pic {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
         }
         .music-list, .game-list {
             list-style-type: none;
@@ -44,15 +68,23 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f4f4f9;
+            color: #666;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>欢迎来到我的个人主页</h1>
+    </div>
     <div class="container">
-        <h1>欢迎来到我的个人主页！</h1>
-        <div class="section">
-            <div class="section-title">个人简介</div>
+        <div class="section clearfix">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
             <div class="section-content">
-                <p>您好！我是一名硕士研究生，专业是计算机技术，目前在智能物联网通信实验室工作。我的研究方向是嵌入式开发和人工智能。</p>
+                <p>你好，我是一名计算机技术硕士研究生，专注于嵌入式开发和人工智能。我在智能物联网通信实验室工作，致力于探索前沿技术，推动技术的进步。</p>
             </div>
         </div>
         <div class="section">
@@ -67,11 +99,12 @@
         <div class="section">
             <div class="section-title">兴趣爱好</div>
             <div class="section-content">
-                <div class="section-title">喜欢的游戏</div>
+                <p>在繁忙的学术生活之余，我喜欢放松自己，享受一些娱乐活动。</p>
+                <div class="section-title">游戏</div>
                 <ul class="game-list">
                     <li>英雄联盟</li>
                 </ul>
-                <div class="section-title">喜欢的音乐</div>
+                <div class="section-title">音乐</div>
                 <ul class="music-list">
                     <li>《情书》</li>
                     <li>林俊杰和蔡卓妍的《小酒窝》</li>
@@ -79,6 +112,9 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 个人主页. 保留所有权利.</p>
     </div>
 </body>
 </html>
